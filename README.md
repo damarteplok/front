@@ -1,2 +1,2 @@
 # front
-just using css for front page static web haha
+just using scss for front page static web haha
