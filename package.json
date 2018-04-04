@@ -1,0 +1,23 @@
+{
+  "name": "absoluthalal",
+  "version": "1.0.0",
+  "description": "front page for static web absoluthalal",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damarteplok/front.git"
+  },
+  "author": "Damar Teplok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damarteplok/front/issues"
+  },
+  "homepage": "https://github.com/damarteplok/front#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
