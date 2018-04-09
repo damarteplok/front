@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,30 @@
     <title>AbsolutHalal : Make it great Again</title>
 </head>
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/pure.svg" alt="logo" class="header__logo">
@@ -28,7 +52,7 @@
                     is where life begins
                 </span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">Discover Our Products</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover Our Products</a>
         </div>
     </header>
     <main>
@@ -107,7 +131,7 @@
             </div>   
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular of AbsolutHalal
@@ -147,7 +171,7 @@
                                     </p>
                                     
                                 </div>
-                                <a href="#" class="btn btn--white">Drink now</a>
+                                <a href="#popup" class="btn btn--white">Drink now</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +209,7 @@
                                     </p>
                                     
                                 </div>
-                                <a href="#" class="btn btn--white">DRINK now</a>
+                                <a href="#popup" class="btn btn--white">DRINK now</a>
                             </div>
                         </div>
                     </div>
@@ -223,7 +247,7 @@
                                     </p>
                                     
                                 </div>
-                                <a href="#" class="btn btn--white">DRINK now</a>
+                                <a href="#popup" class="btn btn--white">DRINK now</a>
                             </div>
                         </div>
                     </div>
@@ -380,67 +404,26 @@
         </div>
     </footer>
 
-    <!--
-    <section class="grid-test">
-        <div class="row">
-            <div class="col-1-of-2">
-                col 1 of 2
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="tourphoto" class="popup__img">
+                <img src="img/nat-9.jpg" alt="tourphoto" class="popup__img">
             </div>
-            <div class="col-1-of-2">
-                col 1 of 2
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                col 1 of 3
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nostrum est saepe exercitationem hic deserunt ipsa. Dignissimos quasi corrupti, nesciunt nisi ad ipsum et, id quam aliquam earum tenetur obcaecati.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cum sunt necessitatibus minus mollitia perspiciatis odio dignissimos deleniti cupiditate rem. Rem dolore voluptas ab nobis eligendi unde beatae perspiciatis rerum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis harum vitae sed eius excepturi
+                    
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-1-of-3">
-                col 1 of 3
-            </div>
-            <div class="col-2-of-3">
-                col 2 of 3
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                col 1 of 4
-            </div>
-            <div class="col-2-of-4">
-                col 2 of 4
-            </div>
-        </div>
-
-    </section>
-    -->
+    </div>
 
 </body>
 </html>
