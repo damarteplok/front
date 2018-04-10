@@ -22,11 +22,18 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        
     }
 
     &__left{
         width: 33.333333%;
         display: table-cell;
+        @include respond(tab-port) {
+            width: 0%;
+            visibility: hidden;
+            opacity: 0;
+        }
     }
 
     &__right {
@@ -34,6 +41,18 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            
+            
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 3rem 3rem;
+            
+        }
     }
 
     &__img {
@@ -65,6 +84,27 @@
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
+
+        @include respond(tab-port) {
+            -moz-column-count: 1;
+            -moz-column-gap: 4rem;
+            -moz-column-rule: 1px solid $color-grey-light-2;
+
+            -ms-column-count: 1;
+            -ms-column-gap: 4rem;
+            -ms-column-rule: 1px solid $color-grey-light-2;
+
+            -webkit-column-count: 1;
+            -webkit-column-gap: 4rem;
+            -webkit-column-rule: 1px solid $color-grey-light-2;
+
+            column-count: 1;
+            column-gap: 4rem;
+            column-rule: 1px solid $color-grey-light-2;
+            
+            
+        }
+
     }
 
     //open states
